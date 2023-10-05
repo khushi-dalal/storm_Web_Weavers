@@ -1,0 +1,188 @@
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .offset-md-3 {
+    margin-left: 0 !important;
+  }
+}
+
+/* Leaderboard Container Styles */
+.leaderboard-container {
+  margin-top: 20px;
+}
+
+.leaderboard-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0055a5;
+  font-size: 26px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: pulse 2s infinite;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 10px 15px;
+  border-bottom: 2px solid #99c2ff;
+  transition: background-color 0.3s;
+}
+
+table th {
+  background: linear-gradient(160deg, #007acc, #0055a5);
+  color: #fff;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table tr:not(:hover) {
+  animation: slideIn 0.5s forwards;
+}
+
+table tr:hover {
+  background-color: #cce5ff;
+  transform: translateX(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-10%);
+    opacity: 0.7;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #388186;
+  color: #fdf6f6;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* Button Hover Styles */
+.btn-primary:hover {
+  background-color: #2e2b2b;
+  color: #388186;
+  transform: scale(1.1);
+}
+
+/* List Group Item Styles */
+.list-group-item {
+  background-color: #fdf6f6;
+  color: #2e2b2b;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* List Group Item Hover Styles */
+.list-group-item:hover {
+  background-color: #2e2b2b;
+  color: #fdf6f6;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+/* Card Hover Styles */
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/* Table Styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Table Header Styles */
+thead {
+  background-color: #388186;
+  color: #fdf6f6;
+}
+
+/* Table Cell Styles */
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Table Row Hover Styles */
+tbody tr:hover {
+  background-color: #fdf6f6;
+}
+
+/* Sidebar Styles */
+/* Sidebar Styles */
+.sidebar a {
+  color: #0055a5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #2e2b2b !important; /* Added !important to ensure the color change takes effect */
+}
+
+.logout{
+  top:0;
+  right:0;
+  margin-top: 0;
+  padding-top: 0;
+}
+h2{
+  align-items: center;
+}
